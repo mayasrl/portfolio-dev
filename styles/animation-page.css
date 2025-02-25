@@ -1,0 +1,28 @@
+#jobs,
+.services,
+.contact {
+  animation: scroll 1s ease-in-out forwards, appear 1s ease-in-out forwards;
+}
+
+
+/* Animação de "scroll": escala no eixo X de 0 a 1 */
+@keyframes scroll {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Animação de "appear": faz o elemento aparecer deslizando da esquerda */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

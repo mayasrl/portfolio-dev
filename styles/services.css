@@ -1,0 +1,43 @@
+.services {
+  padding: 8.8rem 12rem 12rem;
+  background-color: var(--gray-100);
+  animation: scroll 1s ease-in-out forwards, appear 1s ease-in-out forwards;
+}
+
+.services header {
+  margin-bottom: 5.6rem;
+}
+
+.services .cards {
+  margin-inline: 12rem;
+  justify-content: center;
+}
+
+.services .card {
+  border: 2px solid var(--gray-200);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  width: 28rem;
+}
+
+/* Animação de scroll: escala horizontal de 0 a 1 */
+@keyframes scroll {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Animação de appear: desliza da esquerda com fade-in */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

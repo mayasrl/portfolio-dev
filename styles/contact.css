@@ -1,0 +1,75 @@
+.contact {
+  padding: 12.8rem 12rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/images/background-contacts.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  animation: scroll 1s ease-in-out forwards, appear 1s ease-in-out forwards;
+}
+
+.contact header {
+  margin-bottom: 4.8rem;
+}
+
+.contact header p {
+  width: 42rem;
+}
+
+.contact h4 {
+  color: var(--purple);
+}
+
+.contact .social-links {
+  background-color: var(--gray-300);
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 1.2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.contact p {
+  width: 28.8rem;
+  color: var(--gray-500);
+}
+
+.contact a {
+  border: 0.5px solid var(--gray-300);
+  border-radius: 0.8rem;
+  transition: border 0.5s;
+}
+
+.contact a:hover {
+  border: 1.5px solid var(--blue);
+  border-radius: 0.8rem;
+  transform: scale(1);
+}
+
+.contact a:hover img {
+  filter: invert(63%) sepia(51%) saturate(3305%) hue-rotate(179deg) brightness(83%) contrast(92%);
+}
+
+/* Definição das animações utilizadas */
+
+@keyframes scroll {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

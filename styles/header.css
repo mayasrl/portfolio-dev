@@ -1,0 +1,124 @@
+#info {
+  background-image: url(../assets/images/background-intro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  padding: 12rem 18.3rem 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: scroll 1s ease-in-out forwards, appear 1s ease-in-out forwards;
+}
+
+#info .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#info .avatar {
+  position: relative;
+  margin: 0 auto 5.6rem;
+  width: 11.2rem;
+  height: 11.2rem;
+}
+
+#info .avatar::before {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 3.5rem;
+  background-image: url(../assets/code.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0.6rem;
+  bottom: 0.1rem;
+}
+
+#info .avatar img {
+  width: 100%;
+  height: 100%;
+  border: 0.3rem solid var(--red);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#info h1 {
+  margin-bottom: 2rem;
+}
+
+#info p {
+  color: var(--gray-400);
+  margin: auto;
+  text-align: center;
+  max-width: 68rem;
+}
+
+.tags {
+  margin: 4rem auto 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tags ul {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+
+.tags ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--gray-300);
+  border-radius: 99.9rem;
+  padding: 0.8rem 1.6rem;
+  font: var(--text-md);
+  color: var(--gray-500);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tags ul li img {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+}
+
+.tags ul li:hover {
+  background-color: var(--gray-400);
+}
+
+#scroll {
+  position: fixed;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 2.3rem;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+}
+
+#scroll:active {
+  animation: active 1s ease-in;
+}
+
+@keyframes active {
+  0% {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  #info {
+    padding: 6rem 2rem 8rem;
+  }
+  .tags {
+    margin: 3rem auto;
+  }
+}

@@ -1,6 +1,5 @@
 # Portfolio Dev
 
-
 Este projeto é um **portfólio** desenvolvido em **HTML**, **CSS** e **JavaScript**. O portfólio apresenta os principais projetos e habilidades de desenvolvimento, destacando os trabalhos realizados e os serviços oferecidos. O objetivo é demonstrar conhecimentos em **estruturação semântica**, **estilização responsiva** e **interatividade** com boas práticas de desenvolvimento web.
 
 ---
